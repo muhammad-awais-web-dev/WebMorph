@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 function HeroSection(){
     return(
     <section id="heroSection">
-        <div>
+        <div className="subSections">
             <div id="heroInfo">
                 <div>
                     <span>Available for projects</span>
@@ -17,7 +17,7 @@ function HeroSection(){
                 </div>
             </div>
         </div>
-        <div>
+        <div className="subSections">
             <div id="heroCard">
                 <h1>Hi</h1>
             </div>
