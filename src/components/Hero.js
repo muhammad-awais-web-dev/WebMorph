@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom"
+import Profile from '../resourses/Profile.webp' 
+
 
 function HeroSection(){
     return(
@@ -19,6 +21,7 @@ function HeroSection(){
         </div>
         <div className="subSections">
             <div id="heroCard">
+                <img src={Profile} alt="  " />
                 <h1>Hi</h1>
             </div>
         </div>
