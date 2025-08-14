@@ -1,0 +1,25 @@
+#navbar{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+#navMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+}
+.navLink{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.navLink:hover{
+    color: #308be7;
+}
