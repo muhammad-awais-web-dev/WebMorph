@@ -1,10 +1,11 @@
 import './App.css';
 import Navbar from './components/Navbar';
+import HeroSection from './components/Hero';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-function Home(){
-  return <h1>Welcome to my portfolio</h1>
-}
+// function Home(){
+//   return <h1>Welcome to my portfolio</h1>
+// }
 function About(){
   return <h1>About Me</h1>
 }
@@ -26,7 +27,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<HeroSection />} />
         <Route path='/about' element={< About/>} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/certifications' element={<Certifications />} />
