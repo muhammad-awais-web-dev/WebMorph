@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Contact from './components/Contact';
 import HeroSection from './components/Hero';
+import AboutHome from './components/AboutHome';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // function Home(){
@@ -35,6 +36,7 @@ function App() {
         <Route path='/services' element={<Services />} />
         <Route path='/testimonials' element={<Testimonials />} />        
       </Routes>
+      <AboutHome />
       <Contact />
     </Router>
   );
