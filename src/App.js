@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar';
+import Contact from './components/Contact';
 import HeroSection from './components/Hero';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -34,6 +35,7 @@ function App() {
         <Route path='/services' element={<Services />} />
         <Route path='/testimonials' element={<Testimonials />} />        
       </Routes>
+      <Contact />
     </Router>
   );
 }

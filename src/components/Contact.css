@@ -1,0 +1,99 @@
+#contact {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#contact-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 30px;
+}
+
+.contact-sections {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+/* Left Section */
+.contact-sections:nth-child(1) {
+  flex: 0 0 65%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  gap: 20px;
+}
+
+/* Right Section */
+.contact-sections:nth-child(2) {
+  flex: 0 0 35%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  gap: 15px;
+}
+
+.contact-sections:nth-child(2) a {
+  display: inline-flex;
+  width: fit-content;
+  flex-direction: row;
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  gap: 15px;
+  align-items: center;
+}
+
+.contact-sections:nth-child(2) a:hover p {
+  /* text-decoration: underline; */
+  color: #308be7;
+}
+
+.contact-sections:nth-child(2) a i {
+  font-size: 2.25rem;
+  transition: all 0.3s ease;
+}
+
+.contact-sections:nth-child(2) a:hover i {
+  rotate: -15deg;
+  color: #308be7;
+  scale: 1.2;
+}
+
+/* ===== Responsive ===== */
+
+/* Tablets and below */
+@media (max-width: 880px) {
+  #contact-container {
+    flex-direction: column;
+  }
+
+  .contact-sections {
+    padding: 20px;
+  }
+
+  .contact-sections:nth-child(1),
+  .contact-sections:nth-child(2) {
+    flex: 100%;
+  }
+}
+
+/* Small phones */
+@media (max-width: 440px) {
+  .contact-sections:nth-child(2) a {
+    font-size: 1.2rem;
+    gap: 10px;
+  }
+
+  .contact-sections:nth-child(2) a i {
+    font-size: 1.8rem;
+  }
+
+  .contact-sections {
+    padding: 15px;
+  }
+}

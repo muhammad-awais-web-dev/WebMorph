@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
-import Profile from '../resourses/Profile.webp' 
+import Profile from '../resourses/Profile.webp'
+import './HeroSection.css' 
 
 function Overview(props){
     return(
