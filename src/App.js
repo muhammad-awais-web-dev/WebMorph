@@ -5,9 +5,6 @@ import HeroSection from './components/Hero';
 import AboutHome from './components/AboutHome';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-// function Home(){
-//   return <h1>Welcome to my portfolio</h1>
-// }
 function About(){
   return <h1>About Me</h1>
 }
