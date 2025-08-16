@@ -15,7 +15,7 @@ function Projects(){
   return <h1>Projects</h1>
 }
 function Certifications(){
-  return <h1>Certifications</h1>
+  return <h1>Certifi556cations</h1>
 }
 function Services(){
   return <h1>Services</h1>
@@ -29,14 +29,18 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path='/' element={<HeroSection />} />
+        <Route path='/' element={
+          <>
+            <HeroSection />
+            <AboutHome />
+          </>
+          } />
         <Route path='/about' element={< About/>} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/certifications' element={<Certifications />} />
         <Route path='/services' element={<Services />} />
         <Route path='/testimonials' element={<Testimonials />} />        
       </Routes>
-      <AboutHome />
       <Contact />
     </Router>
   );
