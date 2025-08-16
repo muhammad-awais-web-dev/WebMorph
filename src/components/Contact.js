@@ -22,7 +22,7 @@ function Contact() {
             <i className="fa-solid fa-clock"></i> Response Time: 1-2 business
             days
           </p>
-          <p style={{ fontWeight: 600, fontSize: "1.3rem" }}>
+          <p style={{ fontWeight: 600, fontSize: "1.3rem", color: "#fff" }}>
             Let's Collaborate!
           </p>
           <p>
