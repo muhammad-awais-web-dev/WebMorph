@@ -1,6 +1,44 @@
 import "./Contact.css";
 
 function Contact() {
+const contactInfo = [
+  {
+    url:"mailto:awaisrafique4929@gmail.com",
+    icon:"fa-solid fa-envelope",
+    desc:"Email"
+  },
+  {
+    url:"https://wa.me/+923259350593",
+    icon:"fa-brands fa-whatsapp",
+    desc:"Whatsapp"
+  },
+  {
+    url:"https://www.linkedin.com/in/muhammad-awais-web-dev/",
+    icon:"fa-brands fa-linkedin-in",
+    desc:"LinkedIn"
+  },
+  {
+    url:"https://github.com/muhammad-awais-web-dev/",
+    icon:"fa-brands fa-github",
+    desc:"Github"
+  },
+  {
+    url:"https://x.com/WebMorph_Studio/",
+    icon:"fa-brands fa-x-twitter",
+    desc:"X (Twitter)"
+  },
+  {
+    url:"https://www.facebook.com/profile.php?id=61573732746181/",
+    icon:"fa-brands fa-facebook-f",
+    desc:"Facebook"
+  },
+  {
+    url:"https://www.instagram.com/webmorphsrudio/",
+    icon:"fa-brands fa-instagram",
+    desc:"Instagram"
+  }
+]
+
   return (
     <section id="contact">
       <div id="contact-container">
@@ -33,34 +71,14 @@ function Contact() {
 
         {/* Right Section */}
         <div className="contact-sections">
-          <a href="mailto:awaisrafique4929@gmail.com">
-            <i className="fa-solid fa-envelope"></i>
-            <p>Email</p>
-          </a>
-          <a href="https://wa.me/+923259350593">
-            <i className="fa-brands fa-whatsapp"></i>
-            <p>Whatsapp</p>
-          </a>
-          <a href="https://www.linkedin.com/in/muhammad-awais-web-dev/">
-            <i className="fa-brands fa-linkedin-in"></i>
-            <p>LinkedIn</p>
-          </a>
-          <a href="https://github.com/muhammad-awais-web-dev">
-            <i className="fa-brands fa-github"></i>
-            <p>Github</p>
-          </a>
-          <a href="https://x.com/WebMorph_Studio">
-            <i className="fa-brands fa-x-twitter"></i>
-            <p>X (Twitter)</p>
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=61573732746181">
-            <i className="fa-brands fa-facebook-f"></i>
-            <p>Facebook</p>
-          </a>
-          <a href="https://www.instagram.com/webmorphsrudio/">
-            <i className="fa-brands fa-instagram"></i>
-            <p>Instagram</p>
-          </a>
+          {
+            contactInfo.map( contactInfo =>(
+              <a href={contactInfo.url}>
+                <i className={contactInfo.icon}></i>
+                <p>{contactInfo.desc}</p>
+              </a>
+            ))
+          }
         </div>
       </div>
     </section>
