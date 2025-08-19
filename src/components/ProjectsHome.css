@@ -1,0 +1,7 @@
+.ProjectList{
+    display: grid;
+    max-width: 1200px;
+    margin: 0  auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}

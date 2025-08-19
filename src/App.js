@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Contact from './components/Contact';
 import HeroSection from './components/Hero';
 import AboutHome from './components/AboutHome';
+import ProjectsHome from './components/ProjectsHome';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function About(){
@@ -30,6 +31,7 @@ function App() {
           <>
             <HeroSection />
             <AboutHome />
+            <ProjectsHome />
           </>
           } />
         <Route path='/about' element={< About/>} />

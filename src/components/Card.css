@@ -1,0 +1,47 @@
+.Card{
+    background-color: #fff5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 16px;
+    max-width: 100%;
+}
+.Card:hover{
+    background-color: #fff9;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 12px 5px #fff5;
+}
+.Card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    z-index: 1;
+}
+.Card:hover img{
+    scale: 1.05;
+    transition: all 0.3s ease;
+}
+.Card .info{
+    padding: 20px;
+    background-color: #e0e0e0;
+    margin-top: -50px;
+    z-index: 2;
+}
+.Card h3 {
+    font-size: 1.5rem;
+    margin: 8px 0;
+    color: black;
+}
+.Card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.Card ul li {
+    display: inline-block;
+    background-color: #e0e0e0;
+    color: black;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-right: 8px;
+    font-size: 0.875rem;
+}
