@@ -27,6 +27,6 @@ A sleek React-powered portfolio showcasing my work in front-end development and 
 
 ### Installation
 ```bash
-git clone https://github.com/muhammad-awais-web-dev/muhammad-awais-web-dev.github.io.git
-cd muhammad-awais-web-dev.github.io
+git clone https://github.com/muhammad-awais-web-dev/WebMorph/
+cd WebMorph
 npm install
