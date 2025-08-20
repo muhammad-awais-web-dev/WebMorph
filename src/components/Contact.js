@@ -73,7 +73,7 @@ const contactInfo = [
         <div className="contact-sections">
           {
             contactInfo.map( contactInfo =>(
-              <a href={contactInfo.url}>
+              <a href={contactInfo.url} target="_blank" rel="noopener noreferrer">
                 <i className={contactInfo.icon}></i>
                 <p>{contactInfo.desc}</p>
               </a>

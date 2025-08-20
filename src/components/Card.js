@@ -4,7 +4,7 @@ export default function Card(props) {
   return (
     <>
       {props.link && props.link.length > 0 ? (
-        <a href={props.link}>
+        <a href={props.link} target="_blank" rel="noopener noreferrer">
           <div className='Card'>
             <img className='CardImg' src={props.image} alt={props.title} />
             {props.featured ? <span className='badge'>Featured</span> : ""}
@@ -26,6 +26,7 @@ export default function Card(props) {
               <li key={index}>{skill}</li>
             ))}
             </ul>
+            <p>{props.desc}</p>
         </div>
       )}
     </>
