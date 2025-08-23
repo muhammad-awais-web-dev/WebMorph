@@ -12,7 +12,9 @@ export default function Card(props) {
             ))}
             </ul>
             <p>{props.desc}</p>
-            <a style={{textAlign:"center", width:"fit-content"}} href={props.link} className='button'>View Project</a>
+          {props.link && props.link.length > 0 && (
+            <a style={{textAlign:"center", width:"fit-content"}} href={props.link} className='button'> {props.buttonText} </a>
+          )}
         </div>
   )
 }
