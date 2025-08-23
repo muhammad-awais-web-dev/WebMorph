@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import RangoRawiyat from "./assets/Rang-o-Riwayat.webp";
 import Delicacy from "./assets/Delicacy.webp";
 import CtrlAltShop from "./assets/CtrlAlt Shop.webp"
@@ -58,6 +59,7 @@ export default function ProjectsHome() {
           ))
         }
       </div>
+      <Link to="/projects" className="button">View More Projects</Link>
     </section>
   )
 }

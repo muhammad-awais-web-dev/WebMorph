@@ -1,8 +1,9 @@
 #projects{
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 25px 0 25px 0;
-    gap: 25px;
+    gap: 55px;
 }
 .ProjectList{
     display: grid;
